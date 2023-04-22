@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 960px;
+    margin: auto;
+    background-color: rgba(219, 224, 200, 0.868);
+}
+
+header, main, footer{
+    display: flex;
+    justify-content: center;
+}
+
+header, footer{
+    background-color: rgb(26, 200, 119);
+    width: max-content;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
+}
+
+@media screen {
+    
+}
