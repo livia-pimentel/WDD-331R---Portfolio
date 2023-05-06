@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+//variables
+$border-color: #d0d0d0;
+$hover-color: #00ddff;
+$active-color: #DEB887;
+$text-color: #333;
+$title-color: #666;
+$heading-font: 'Lora', serif;
+$text-font: Arial, Helvetica, sans-serif;
+$margin-heading: 1.8em 0.3em 1.8em 0.3em;
+$border-style: 2px solid #d0d0d0;
+$break-point: 600px;
+
+@mixin breakpoint($break){
+    @if $break == medium{
+        @media (min-width: $break-point){
+            @content;
+        }
+    }
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 960px;
+    margin: auto;
+    font-family: $text-font;
+    color: $text-color;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: $title-color;
+    font-family: $heading-font;
+    nav &:hover, h2 &:hover{
+        color: $hover-color;
+    }
+    &:active{
+        color: $active-color;
+    }
+}
+
+li{
+    list-style: none;
+    padding: 0.6em;
+    margin: 0.3em;
+    font-size: 1.3em;
+}
+
+header{
+    h1 a{
+        margin: $margin-heading;
+        color: black;
+        font-size: 2em;
+    }
+
+    nav{
+        margin: 0.3em;
+        border-top: $border-style;
+        border-bottom: $border-style;
+    }
+
+    @include breakpoint(medium) {
+        nav ul{
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+main{
+    h2{
+        text-align: start;
+        margin: $margin-heading;
+        font-family: $heading-font;
+    }
+
+    .post-date{
+        margin-right: 0.8em;
+        margin-left: 0.3em;
+        margin-top: 3em;
+        text-transform: uppercase;
+        text-align: end;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .post-content{
+        border-top: $border-style;
+        margin: $margin-heading
+    }
+
+    @include breakpoint(medium) {
+        .post-content{
+            border-top: none;
+            border-bottom: $border-style;
+            border-left: $border-style;
+            margin: 0;
+        }
+
+        article{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}
+
+
+
