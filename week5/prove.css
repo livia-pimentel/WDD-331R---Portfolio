@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  height: 25vmin;
+  width: 25vmin;
+  background-color: teal;
+  margin: 1em;
+  padding: 1vmin;
+}
+
+.container-one .orbiting-circle {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  border-radius: 50%;
+  animation: orbit 3s linear infinite;
+}
+@keyframes orbit {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(300%, 0);
+  }
+  30% {
+    transform: translate(300%, 0);
+  }
+  50% {
+    transform: translate(300%, 300%);
+  }
+  55% {
+    transform: translate(300%, 300%);
+  }
+  75% {
+    transform: translate(0, 300%);
+  }
+  80% {
+    transform: translate(0, 300%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-two .morphing-circle {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  border-radius: 50%;
+  transition: border-radius 0.5s ease, background-color 0.5s ease, transform 0.5s ease 0.5s;
+  animation: morphing-circle-square 3s linear infinite;
+}
+.container-two:hover .morphing-circle {
+  border-radius: 0;
+  background-color: white;
+  transform: rotate(90deg);
+}
+@keyframes morphing-circle-square {
+  0% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 0%;
+    background-color: white;
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    border-radius: 50%;
+    background-color: darkred;
+  }
+}
+
+.container-tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-tree .left {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  shape-outside: ellipse(50% at 50%);
+  -webkit-clip-path: circle(50% at 100%);
+          clip-path: circle(50% at 100%);
+  animation: move-left 3s linear infinite;
+}
+.container-tree .right {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  shape-outside: circle(50% at 100%);
+  -webkit-clip-path: circle(50% at 0%);
+          clip-path: circle(50% at 0%);
+  animation: move-right 3s linear infinite;
+}
+@keyframes move-left {
+  25% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    transform: translate(-30%, 0);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes move-right {
+  25% {
+    transform: translate(30%, 0);
+  }
+  50% {
+    transform: translate(30%, 0);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+}
+
+.container-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-four .last {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  border-radius: 50%;
+  transform: scale(1) scale(1.1);
+  animation: beat 1s infinite;
+}
+@keyframes beat {
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+}/*# sourceMappingURL=prove.css.map */
