@@ -1,0 +1,40 @@
+.summary {
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 3px;
+  max-width: 360px;
+  margin: auto;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.summary__title {
+  margin-bottom: 0;
+}
+.summary__img {
+  width: 100%;
+}
+.summary__body {
+  padding: 1em;
+}
+.summary__tags {
+  color: blue;
+  font-weight: bold;
+  margin: 0;
+}
+.summary__date {
+  color: grey;
+  margin-top: 0.3em;
+}
+.summary__link a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 440px) {
+  .summary {
+    display: flex;
+    max-width: 500px;
+  }
+  .summary__img {
+    width: 40%;
+    order: 2;
+  }
+}/*# sourceMappingURL=ponder.css.map */
