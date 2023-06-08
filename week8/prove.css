@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  max-width: 1020px;
+  margin: 30px auto;
+  background-color: #717171;
+}
+
+.card__back__one {
+  width: 400px;
+  height: 560px;
+  background: linear-gradient(to right, black, darkred);
+}
+
+.pattern__rectangle__one {
+  fill: rgb(244, 216, 185);
+  width: 80px;
+  height: 80px;
+}
+
+.pattern__rectangle__two {
+  fill: orange;
+  width: 10px;
+  height: 20px;
+}
+
+.pattern__circle__one {
+  fill: rgb(68, 69, 68);
+}
+
+.pattern__polygon__one {
+  fill: none;
+  stroke: blue;
+  stroke-width: 3;
+}
+
+.pattern__polygon__two {
+  fill: #ff0000;
+}
+
+.pattern__ellipse__one {
+  fill: rgb(237, 11, 192);
+}
+
+.pattern__circle__two {
+  fill: green;
+}
+
+.pattern__circle__third {
+  fill: aquamarine;
+}
+
+.card__rectangle__one {
+  width: 100%;
+  height: 100%;
+  fill: url(#card__pattern__one);
+}/*# sourceMappingURL=prove.css.map */
