@@ -9,6 +9,11 @@ body {
   background-color: #717171;
 }
 
+svg {
+  margin-right: 50px;
+}
+
+/* ----- First Card Back -----*/
 .card__back__one {
   width: 400px;
   height: 560px;
@@ -57,4 +62,43 @@ body {
   width: 100%;
   height: 100%;
   fill: url(#card__pattern__one);
+}
+
+/* ----- First Card Back End-----*/
+.card__back__two {
+  width: 400px;
+  height: 560px;
+  background: linear-gradient(to bottom, black, rgb(7, 135, 78), black);
+}
+
+.pattern__rectangle {
+  fill: rgb(122, 4, 97);
+  width: 80px;
+  height: 80px;
+}
+
+.pattern__polygon {
+  fill: none;
+  stroke: rgb(183, 255, 0);
+  stroke-width: 4;
+}
+
+.pattern__line {
+  stroke: red;
+  stroke-width: 3;
+}
+
+.pattern__line_one {
+  stroke: #309b9b;
+  stroke-width: 4;
+}
+
+.pattern__circle {
+  fill: rgb(6, 55, 153);
+}
+
+.card__rectangle__two {
+  width: 100%;
+  height: 100%;
+  fill: url(#card__pattern__two);
 }/*# sourceMappingURL=prove.css.map */
