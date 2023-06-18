@@ -4,19 +4,6 @@
     Radial Gradients (defined by their center)
     Conic Gradients (rotated around a center point)
 */
-/* 
-    Linear-Gradient
-    # Need to define at least two color stops
-    # Can set direction (top, left, right, and bottom)
-    # If you want more control over the direction of the gradient you should use angles.
-    # To create effects it is possible to use transparency, for that use the rgba() function to define the color stops.
-    # To repeat the same setting just use repeating-linear-gradient()
-*/
-div {
-  width: 100%;
-  height: 750px;
-}
-
 body {
   display: grid;
   place-items: center;
