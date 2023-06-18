@@ -1,13 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*
+    CSS defines three types of gradients:
+    Linear Gradients (goes down/up/left/right/diagonally)
+    Radial Gradients (defined by their center)
+    Conic Gradients (rotated around a center point)
+*/
 
-div {
-    width: 100%;
-    height: 800px;
-}
 
 /* 
     Linear-Gradient
@@ -18,14 +15,25 @@ div {
     # To repeat the same setting just use repeating-linear-gradient()
 */
 
-.gradient__one {
-    display: grid;
-    place-items: center;
-    
+div {
+    width: 100%;
+    height: 750px;
 }
 
-// h1 { 
-//     background-image: linear-gradient(to right, red, rgb(5, 5, 33), orange);
-//     background-clip: text;
-//     color: transparent;
-// }
+body {
+    display: grid;
+    place-items: center;
+    background-color: rgb(179, 177, 177);
+    // background: linear-gradient(to top, red, yellow, green);
+    // background: linear-gradient(to left, rgb(25, 0, 255) 50px, rgb(42, 42, 9) 30%);
+    // background-image: linear-gradient(-45deg, orange, red, green);
+    // background-image: repeating-linear-gradient(45deg, transparent, #4d9f0c 40px, red 80px),    
+    // repeating-linear-gradient(145deg, transparent, #183de0 40px, rgb(10, 233, 6) 90px),    
+
+}
+
+h1 { 
+    background-image: linear-gradient(to right, rgb(6, 90, 3), rgb(3, 3, 81), rgb(213, 30, 13));
+    background-clip: text;
+    color: transparent;
+}
