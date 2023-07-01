@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 960px;
+  margin: auto;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(182, 189, 239, 0.6039215686);
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+h1 {
+  color: #4808a9;
+}
+
+h1::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  background-color: currentColor;
+  display: block;
+  margin: 10px auto;
+}
+
+main {
+  margin: 1em;
+  padding: 5px;
+}
+
+ol > li {
+  font-weight: bold;
+  margin: 1em;
+  color: rgb(50, 48, 48);
+}
+
+li > p {
+  color: rgb(63, 61, 61);
+}
+
+p {
+  font-weight: 100;
+}/*# sourceMappingURL=reflection.css.map */

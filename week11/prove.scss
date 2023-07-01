@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: 3rem auto;
+    background-color: rgba(228, 231, 229, 0.619);
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+li {
+    font-size: 1.3rem;
+    color: rgb(3, 62, 18);
+}
+
+h1, h2{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 62, 18);
+}
+
+p {
+    padding: 2px;
+    margin: 0.5rem;
+}
+

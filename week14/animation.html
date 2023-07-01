@@ -7,33 +7,6 @@
         <link rel="stylesheet" href="animation.css">
         <meta name="description" content="Week 14 - review this codepen (CodePen Home
         SVG / CSS animation - checkbox)">
-        <script>
-            var toggler = document.querySelector('.checkbox__toggle');
-            var circle = document.querySelector('.checkbox__checker');
-
-            var time1 = 150;
-            var time2 = 800;
-
-            toggler.click(function(){
-            circle.removeClass('anim--speed');
-            if($(this).is(":checked")){
-                setTimeout(function(){
-                circle.addClass('anim--speed');
-                },10);
-                setTimeout(function(){
-                circle.addClass('anim--go-right');
-                },time1);
-            }
-            else{
-                setTimeout(function(){
-                circle.addClass('anim--speed');
-                },10);
-                setTimeout(function(){
-                circle.removeClass('anim--go-right');
-                },time1);
-            }
-            })
-        </script>
     </head>
     <body>
         <h1>SVG toggle animation</h1>
@@ -62,6 +35,33 @@
         <footer>
             <a class='link' href='http://timguignard.com' target='_blank'>timguignard.com</a>
         </footer>
-        <!-- <script src="animation.js"></script> -->
+        <script src="/week14/code.jquery.com_jquery-3.7.0.js"></script>
+        <script>
+            var toggler = document.querySelector('.checkbox__toggle');
+            var circle = document.querySelector('.checkbox__checker');
+
+            var time1 = 150;
+            var time2 = 800;
+
+            toggler.click(function(){
+            circle.removeClass('anim--speed');
+            if($(this).is(":checked")){
+                setTimeout(function(){
+                circle.addClass('anim--speed');
+                },10);
+                setTimeout(function(){
+                circle.addClass('anim--go-right');
+                },time1);
+            }
+            else{
+                setTimeout(function(){
+                circle.addClass('anim--speed');
+                },10);
+                setTimeout(function(){
+                circle.removeClass('anim--go-right');
+                },time1);
+            }
+            })
+        </script>
     </body>
 </html>
