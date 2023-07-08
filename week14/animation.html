@@ -8,6 +8,40 @@
         <meta name="description" content="Week 14 - review this codepen (CodePen Home
         SVG / CSS animation - checkbox)">
     </head>
+    <style>
+        
+   
+.anim{
+    transition-timing-function: cubic-bezier(0.385, -0.600, 0.685, 1.590);
+    transition-duration: .2s;
+  }
+
+  .anim--go-right{
+     left: calc(100% - 76px);
+  }
+  .anim--speed{
+  
+    animation-duration: .5s;
+    animation-name: speedSmall;  
+  }
+  
+
+  @keyframes speed {
+    0%   { transform: scaleY(.6); }
+    30%   { transform: scaleY(2.3); }
+    60%   { transform: scaleY(2.3); }
+    100%  { transform: scaleY(.6); }
+  }
+  @keyframes speedSmall {
+    0%   { transform: scale(1, 1); }
+    25%   { transform: scale(.7, .7); }
+    35%   { transform: scale(.7, .7); }
+    50%   { transform: scale(.7, .3); }
+    65%   { transform: scale(.7, .7); }
+    75%   { transform: scale(.7, .7); }
+    100%  { transform: scale(1, 1); }
+  }
+    </style>
     <body>
         <h1>SVG toggle animation</h1>
         <h2>A full css/svg checkbox button</h2>

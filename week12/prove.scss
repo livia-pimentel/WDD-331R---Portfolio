@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap');
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f0ecdc;
+}
+
+/* NAVBAR */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+#navbarSupportedContent .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item a.active {
+    border-bottom: 1px solid #050505 ;
+}
+
+.nav-item a:hover {
+    color: white;
+} 
+
+#navbarSupportedContent i:hover {
+    color: #050505;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .navbar-brand img {
+        width: 250px;
+    }
+}
+
+/* SLIDER */
+.carousel-item img {
+    height: 300px;
+}
+
+@media(min-width: 768px) {
+    .carousel-item img {
+        height: 500px;
+    }
+}
+
+/* CARD */
+#card-images {
+    margin-top: 2em;
+}
+
+/* FOOTER */
+#img-footer img{
+    width: 100%;
+}
+
+address a {
+    color: #050505;
+}
+
+#social-icons i:hover {
+    color: #050505;
+}
+
+@media(min-width: 768px) {
+    #footer-details {
+        border-left: 2px solid #050505;
+        border-right: 2px solid #050505;
+    }
+}
+
+

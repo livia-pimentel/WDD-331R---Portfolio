@@ -19,3 +19,62 @@ link {
     text-align: center;
     color: $color-secondary;
 }
+
+.checkbox__checker {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    display: block;
+    width: 73px;
+    height: 73px;
+    background-color: $color-back;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.checkbox__path, .checkbox__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shape-bg {
+    fill: #aaa;
+}
+
+.checkbox__path {
+    z-index: 9;
+    .shape-bg {
+        fill: $color-back;
+        stroke-width: 1px;
+        stroke: #aaa;
+    }
+    .path {
+        stroke-width: 4px;
+        stroke: $color-off;
+        fill: none;
+        stroke-linecap: round;
+        transition: 1s;
+        &--top {
+            stroke-dasharray: 33px 360px;
+            stroke-dashoffset: -336px;
+        }
+        &--bottom {
+            stroke-dasharray: 33px 360px;
+            stroke-dashoffset: -324px;
+        }
+    }
+}
+
+#checkbox__circle {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}

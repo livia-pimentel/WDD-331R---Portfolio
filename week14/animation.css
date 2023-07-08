@@ -20,6 +20,83 @@ link {
   color: #278fb2;
 }
 
+.checkbox__checker {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  display: block;
+  width: 73px;
+  height: 73px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.checkbox__path, .checkbox__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shape-bg {
+  fill: #aaa;
+}
+
+.checkbox__path {
+  z-index: 9;
+}
+.checkbox__path .shape-bg {
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #aaa;
+}
+.checkbox__path .path {
+  stroke-width: 4px;
+  stroke: #bf1e1e;
+  fill: none;
+  stroke-linecap: round;
+  transition: 1s;
+}
+.checkbox__path .path--top {
+  stroke-dasharray: 33px 360px;
+  stroke-dashoffset: -336px;
+}
+.checkbox__path .path--bottom {
+  stroke-dasharray: 33px 360px;
+  stroke-dashoffset: -324px;
+}
+
+#checkbox__circle {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+.checkbox__container {
+  display: block;
+  position: relative;
+  height: 82px;
+}
+.checkbox__container__toggle {
+  display: none;
+}
+.checkbox__container:checked ~ .checkbox__path .path--top {
+  stroke-dashoffset: 0px;
+  stroke: #0cb018;
+}
+.checkbox__container:checked ~ .checkbox__path .path--bottom {
+  stroke-dasharray: 14px 360px;
+  stroke-dashoffset: 0px;
+  stroke: #0cb018;
+}
+
 body {
   background-color: #eee;
   padding-top: 40px;
@@ -28,4 +105,9 @@ body {
 footer {
   text-align: center;
   padding-bottom: 50px;
+}
+
+.checkbox {
+  width: 200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=animation.css.map */
