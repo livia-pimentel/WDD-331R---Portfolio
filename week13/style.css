@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chakra+Petch:wght@400;600&family=Urbanist:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #326508;
+  max-width: 960px;
+  margin: 30px auto;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+h1 {
+  background: linear-gradient(to right, #F2E205 0%, #F20505 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #013440;
+}
+
+p {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.3rem;
+  color: #b3b3b3;
+}
+
+video {
+  margin: 1rem;
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+  color: #013440;
+}
+ul a:hover {
+  border-radius: 10px;
+  background-color: #b3b3b3;
+}/*# sourceMappingURL=style.css.map */
